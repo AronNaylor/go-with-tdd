@@ -16,6 +16,5 @@ jobs:
 
     - name: hello-world
       run: |
-        pwd
         cd hello-world
-        pwd
+        go test
