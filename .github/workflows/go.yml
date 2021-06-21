@@ -4,7 +4,7 @@ on: push
 
 jobs:
 
-  Test:
+  Tests:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -23,3 +23,24 @@ jobs:
       run: |
         cd integers
         go test -v
+    
+    - name: iteration
+      run: |
+        cd iteration
+        go test -v
+    
+  Benchmarks:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.16
+
+    - name: iteration benchmark
+      run: |
+        cd iteration
+        go test -bench=.
+
