@@ -17,4 +17,9 @@ jobs:
     - name: hello-world
       run: |
         cd hello-world
-        go test
+        go test -v
+    
+    - name: integers
+      run: |
+        cd integers
+        go test -v
