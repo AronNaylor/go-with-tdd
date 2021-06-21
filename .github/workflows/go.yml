@@ -15,5 +15,6 @@ jobs:
         go-version: 1.16
 
     - name: hello-world
+      run: pwd
       run: cd hello-world
       run: pwd
