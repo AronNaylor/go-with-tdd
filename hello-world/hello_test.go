@@ -12,7 +12,7 @@ func TestHello(t *testing.T) {
 
 	t.Run("Name provided", func(t *testing.T) {
 		got := Hello("Aron", "")
-		want := "Hello, Aron"
+		want := "Hello, ron"
 		assertCorrectMessage(t, got, want)
 	})
 
