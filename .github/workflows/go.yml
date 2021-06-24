@@ -37,8 +37,8 @@ jobs:
         go test -v
         go test -cover
 
-    - name: struct-methods-interfaces
+    - name: structs-methods-interfaces
       run: |
-        cd struct-methods-interfaces
+        cd structs-methods-interfaces
         go test -v
         go test -cover
