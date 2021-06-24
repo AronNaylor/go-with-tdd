@@ -36,3 +36,9 @@ jobs:
         cd arrays-and-slices
         go test -v
         go test -cover
+
+    - name: struct-methods-interfaces
+      run: |
+        cd struct-methods-interfaces
+        go test -v
+        go test -cover
