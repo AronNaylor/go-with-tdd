@@ -48,3 +48,9 @@ jobs:
         cd pointers-errors
         go test -v
         go test -cover
+    
+    - name: maps
+      run: |
+        cd maps
+        go test -v
+        go test -cover
