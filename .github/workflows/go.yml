@@ -42,3 +42,9 @@ jobs:
         cd structs-methods-interfaces
         go test -v
         go test -cover
+    
+    - name: pointers-errors
+      run: |
+        cd pointers-errors
+        go test -v
+        go test -cover
